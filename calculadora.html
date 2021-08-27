@@ -1,0 +1,60 @@
+
+
+<html>
+
+	<head>
+		/* incluye hoja de estilos (css) */
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		
+		/* carga javascript */
+		<script src="js/calculadora.js"></script>
+
+	</head>
+	
+	<body>
+	
+		<div class="mycalc">
+			<form name="calculator" id="calculator">
+				<input type="text" name="inputwindow" id="inputwindow">
+				<div>
+					<!-- El botón llama a la función pasando como primer parámetro todo el botón 
+						 Así con cada botón numérico
+					-->
+					<input type="button" id="one" value="1" onclick="ponerValor(this)">
+					<input type="button" id="two" value="2" onclick="ponerValor(this)">
+					<input type="button" id="three" value="3" onclick="ponerValor(this)">
+					<input type="button" id="plus" value="+" onclick="ponerValor(this)">
+				</div>
+				<div>
+					<input type="button" id="four" value="4" onclick="ponerValor(this)">
+					<input type="button" id="five" value="5" onclick="ponerValor(this)">
+					<input type="button" id="six" value="6" onclick="ponerValor(this)">
+					<input type="button" id="minus" value="-" onclick="ponerValor(this)">
+				</div>
+				<div>
+					<input type="button" id="seven" value="7" onclick="ponerValor(this)">
+					<input type="button" id="eight" value="8" onclick="ponerValor(this)">
+					<input type="button" id="nine" value="9" onclick="ponerValor(this)">
+					<input type="button" id="by" value="*" onclick="ponerValor(this)">
+				</div>
+				<div>
+					<input type="button" id="zero" value="0" onclick="ponerValor(this)">
+					<input type="button" id="decimal" value="." onclick="ponerValor(this)">
+					<input type="button" id="devide" value="/" onclick="ponerValor(this)">
+					<input type="button" id="percent" value="%" onclick="ponerValor(this)">	
+				</div>
+				<div class="results">
+					<!-- Llama a la función calcularResultado() -->
+					<input type="button" id="equal" value="=" onclick="calcularResultado()">
+					
+					<!-- Llama a la función borrarPantalla() -->
+					<button type="button" id="clear" value="" onclick="borrarPantalla()">Clear</button>
+				</div>
+
+			</form>	
+		</div>
+	
+	</body>
+
+
+</html>
